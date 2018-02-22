@@ -1,0 +1,299 @@
+/* MY WEBPAGE */
+/* -----------Common styles---------- */
+.textBlock, .headingBlock {
+  color: #3b3b3b;
+  font-family: Century Gothic; }
+
+header, .slider_content, .footer_content, .about, .skills, .references, .projects, .hobbies, .contact {
+  width: 960px;
+  margin: 0 auto; }
+
+.section_head {
+  background-color: #f2385a;
+  border-radius: 5px;
+  box-shadow: 0 0 0 15px white;
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
+  margin: 0 auto;
+  margin-top: -20px;
+  padding: 7px 20px;
+  text-align: center;
+  width: 250px;
+  z-index: 1; }
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #9a9a9a; }
+
+/* ---------------Header--------------- */
+header {
+  height: 75px;
+  margin-top: 25px; }
+  header .logo {
+    margin-left: 20px;
+    margin-bottom: 25px;
+    color: #f2385a;
+    font-size: 32px;
+    text-decoration: none; }
+  header .quote {
+    margin-left: 90px;
+    margin-top: 10px;
+    color: #9a9a9a; }
+  header .logo_dream {
+    width: 130px;
+    height: 40px;
+    margin-right: 30px;
+    background: url("../images/logo.png") no-repeat;
+    background-size: cover; }
+
+nav {
+  height: 50px;
+  background-color: #252525;
+  border-radius: 5px; }
+  nav a {
+    padding: 15px 50px;
+    color: white;
+    border-left: 1px solid #3b3b3b;
+    text-decoration: none; }
+    nav a.first {
+      border: none !important; }
+    nav a:hover {
+      color: #f2385a; }
+
+/* ---------------Footer--------------- */
+footer {
+  background-color: #a6a6a6;
+  color: white; }
+  footer .footer_line_top {
+    height: 4px;
+    background: url("../images/footer_line_top.png") repeat; }
+  footer .footer_content {
+    overflow: hidden; }
+    footer .footer_content .social {
+      margin-top: 10px;
+      font-size: 12px; }
+      footer .footer_content .social .textBox {
+        text-align: center; }
+      footer .footer_content .social a {
+        display: block;
+        margin: 5px; }
+        footer .footer_content .social a:hover {
+          opacity: 0.5; }
+    footer .footer_content .copyright {
+      margin-top: 25px;
+      font-size: 14px; }
+  footer .footer_line_bottom {
+    height: 4px;
+    background: url("../images/footer_line_bottom.png") repeat; }
+
+/* ---------------About--------------- */
+.about {
+  margin-top: 35px;
+  border-top: 1px solid #9a9a9a; }
+  .about .about_content {
+    padding-bottom: 30px;
+    overflow: hidden; }
+    .about .about_content .about_img {
+      margin: 20px 0px 0px 30px; }
+      .about .about_content .about_img img {
+        border-radius: 5px; }
+    .about .about_content .about_text {
+      width: 575px;
+      margin-left: 100px;
+      margin-top: 20px; }
+      .about .about_content .about_text .textBlock {
+        margin-top: 10px;
+        font-size: 20px;
+        color: #3b3b3b; }
+      .about .about_content .about_text a {
+        font-size: 18px;
+        color: #3b3b3b;
+        margin-top: 10px;
+        display: block;
+        float: left;
+        clear: both;
+        text-decoration: none; }
+        .about .about_content .about_text a:hover {
+          cursor: pointer;
+          text-decoration: underline; }
+
+/* ---------------Skills-------------- */
+.skills {
+  margin-top: 35px;
+  border-top: 1px solid #9a9a9a; }
+  .skills .skills_content {
+    overflow: hidden;
+    padding-bottom: 50px; }
+    .skills .skills_content .skills_left {
+      width: 450px;
+      margin-left: 30px; }
+    .skills .skills_content .skills_right {
+      width: 450px;
+      margin-left: 30px; }
+    .skills .skills_content .skill {
+      margin-top: 10px; }
+      .skills .skills_content .skill .textBlock {
+        margin-left: 10px;
+        font-size: 16px; }
+      .skills .skills_content .skill .progressbar {
+        width: 400px;
+        height: 30px;
+        border: 1px solid #9a9a9a;
+        border-radius: 5px;
+        overflow: hidden; }
+        .skills .skills_content .skill .progressbar .pb1, .skills .skills_content .skill .progressbar .pb2, .skills .skills_content .skill .progressbar .pb3, .skills .skills_content .skill .progressbar .pb4 {
+          height: 30px;
+          background-color: #10d4b6; }
+        .skills .skills_content .skill .progressbar .pb1 {
+          width: 100px; }
+        .skills .skills_content .skill .progressbar .pb2 {
+          width: 200px; }
+        .skills .skills_content .skill .progressbar .pb3 {
+          width: 300px; }
+        .skills .skills_content .skill .progressbar .pb4 {
+          width: 400px; }
+
+/* ---------------References------------- */
+.references {
+  margin-top: 35px;
+  border-top: 1px solid #9a9a9a; }
+  .references .references_content {
+    padding-bottom: 50px;
+    overflow: hidden; }
+    .references .references_content .references_left {
+      width: 450px;
+      margin-left: 30px; }
+    .references .references_content .references_right {
+      width: 450px;
+      margin-left: 30px; }
+
+/* ---------------Projects------------- */
+.projects {
+  margin-top: 35px;
+  border-top: 1px solid #9a9a9a; }
+  .projects .projects_content {
+    margin-top: 20px;
+    padding-bottom: 50px;
+    overflow: hidden; }
+    .projects .projects_content .projects_left {
+      width: 450px;
+      margin-left: 30px; }
+    .projects .projects_content .projects_right {
+      width: 450px;
+      margin-left: 30px; }
+    .projects .projects_content a {
+      width: 400px;
+      height: 300px;
+      background-size: cover !important; }
+    .projects .projects_content .projects_cloudfarms {
+      width: 860px;
+      margin-left: 50px;
+      margin-top: 30px; }
+      .projects .projects_content .projects_cloudfarms .cloudfarms {
+        width: 860px;
+        height: 330px;
+        margin-top: 20px;
+        background: url("../Gallery/Cloudfarms.png") no-repeat; }
+    .projects .projects_content .projects_agmpartners {
+      width: 860px;
+      margin-left: 50px;
+      margin-top: 30px; }
+      .projects .projects_content .projects_agmpartners .agmpartners {
+        width: 860px;
+        height: 538px;
+        margin-top: 20px;
+        background: url("../Gallery/AGMpartners.jpg") no-repeat; }
+    .projects .projects_content .seges {
+      background: url("../Gallery/Seges.jpg") no-repeat; }
+    .projects .projects_content .nabytok {
+      background: url("../Gallery/Nabytok.jpg") no-repeat; }
+    .projects .projects_content .luna {
+      background: url("../Gallery/Luna.jpg") no-repeat; }
+    .projects .projects_content .raj {
+      background: url("../Gallery/Rajbyvania.jpg") no-repeat; }
+    .projects .projects_content .esam {
+      background: url("../Gallery/Esam.jpg") no-repeat; }
+    .projects .projects_content .mcena {
+      background: url("../Gallery/Mcena.jpg") no-repeat; }
+    .projects .projects_content .game {
+      background: url("../Gallery/game.png") no-repeat; }
+    .projects .projects_content .edu {
+      background: url("../Gallery/edu.png") no-repeat; }
+    .projects .projects_content .pozor_revizor {
+      width: 200px;
+      margin-left: 100px;
+      background: url("../Gallery/PozorRevizor.png") no-repeat; }
+    .projects .projects_content .pozor_revizor_logo {
+      width: 50px;
+      height: 50px;
+      margin-top: 10px;
+      margin-right: 20px;
+      background: url("../Gallery/PozorRevizorLogo.png") no-repeat; }
+    .projects .projects_content .presentation {
+      width: auto;
+      height: auto;
+      font-size: 18px;
+      color: #3b3b3b;
+      margin-top: 10px;
+      display: block;
+      float: left;
+      clear: both;
+      text-decoration: none; }
+      .projects .projects_content .presentation:hover {
+        cursor: pointer;
+        text-decoration: underline; }
+    .projects .projects_content .textBlock, .projects .projects_content .headingBlock {
+      text-align: center; }
+    .projects .projects_content.adobe img {
+      margin-left: 2px;
+      margin-right: 2px; }
+    .projects .projects_content.adobe .textBlock {
+      margin-top: 45px;
+      font-size: 18px; }
+  .projects .commercial .projects_left, .projects .commercial .projects_right {
+    margin-bottom: 30px; }
+
+/* ---------------Hobbies------------- */
+.hobbies {
+  margin-top: 35px;
+  border-top: 1px solid #9a9a9a; }
+  .hobbies .hobbies_content {
+    margin-top: 20px;
+    padding-bottom: 50px;
+    overflow: hidden; }
+    .hobbies .hobbies_content .hobbies_text {
+      width: 450px;
+      margin-top: 20px; }
+      .hobbies .hobbies_content .hobbies_text.floatLeft {
+        margin-right: 30px; }
+      .hobbies .hobbies_content .hobbies_text.floatRight {
+        margin-left: 30px; }
+      .hobbies .hobbies_content .hobbies_text .textBlock {
+        margin-top: 10px; }
+
+/* ---------------Contact------------- */
+.contact {
+  margin-top: 35px;
+  border-top: 1px solid #9a9a9a; }
+  .contact .contact_content {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden; }
+    .contact .contact_content .contact_left {
+      width: 450px;
+      margin-left: 30px; }
+      .contact .contact_content .contact_left .textBlock {
+        height: 30px; }
+    .contact .contact_content .contact_right {
+      width: 450px;
+      margin-left: 30px; }
+      .contact .contact_content .contact_right .contact_social {
+        height: 30px; }
+        .contact .contact_content .contact_right .contact_social img {
+          margin-right: 20px; }
+        .contact .contact_content .contact_right .contact_social .textBlock {
+          margin-top: 2px; }
+
+/*# sourceMappingURL=style.css.map */
