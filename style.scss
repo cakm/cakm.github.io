@@ -16,7 +16,7 @@ $darkgreen: #10d4b6;
 	font-family: Century Gothic;
 }
 
-.header, .slider_content, .footer_content, .about, .skills, .references, .projects, .hobbies, .contact {
+header, .slider_content, .footer_content, .about, .skills, .references, .projects, .hobbies, .contact {
 	width: 960px;
 	margin: 0 auto;
 }
@@ -44,7 +44,7 @@ $darkgreen: #10d4b6;
 
 /* ---------------Header--------------- */
 
-.header {
+header {
 	height: 75px;
 	margin-top: 25px;
 	
@@ -69,72 +69,32 @@ $darkgreen: #10d4b6;
 		background: url("../images/logo.png") no-repeat;
 		background-size: cover;
 	}
-	
-	.language {
-		display: none;
-		margin-top: 10px;
-		color: $darkgreen;
-		
-		.separator {
-			margin-left: 5px;
-			margin-right: 5px;
-			margin-top: -2px;
-			color: $darkgreen;
-		}
-	}
-	
-	.menu {
-		height: 50px;
-		background-color: $black;
-		border-radius: 5px;
-		
-		a {
-			padding: 15px 50px;
-			color: white;
-			border-left: 1px solid $darkgrey;
-			text-decoration: none;
-			
-			&.first {
-				border: none !important;
-			}
-			
-			&:hover {
-				color: $red;
-			}
-		}
-	}
 }
 
-/* ---------------Slider-------------- */
-
-.slider {
-	height: 389px;
-	margin-top: 20px;
-	background: url("../images/home_slider_background_image.png") no-repeat scroll 5px -145px $darkgreen;
+nav {
+	height: 50px;
+	background-color: $black;
+	border-radius: 5px;
 	
-	.slider_line_top {
-		height: 4px;
-		background: url("../images/home_slider_line_top.png") repeat;
-		position: relative;
-		z-index: 1000;
-	}
-	
-	.slider_content {
-		height: 386px;
-		margin-top: -4px;
-	}
-	
-	.slider_line_bottom {
-		height: 4px;
-		background: url("../images/home_slider_line_bottom.png") repeat;
-		position: relative;
-		z-index: 1000;
+	a {
+		padding: 15px 50px;
+		color: white;
+		border-left: 1px solid $darkgrey;
+		text-decoration: none;
+		
+		&.first {
+			border: none !important;
+		}
+		
+		&:hover {
+			color: $red;
+		}
 	}
 }
 
 /* ---------------Footer--------------- */
 
-.footer {
+footer {
 	background-color: $brightgrey;
 	color: white;
 
