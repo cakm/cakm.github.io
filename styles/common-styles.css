@@ -1,0 +1,412 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body p {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+a img {
+	border: 0 none;
+}
+
+ul {
+	margin: 0;
+}
+
+.acris-inline-scripts, .acris-external-scripts {
+	display: none;
+} 
+
+.chocolatePanel {
+	zoom: 1;
+}
+
+.cleaner {
+	clear: both;
+	border: none;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	height: 1px;
+	font-size: 1px;
+}
+
+.acris-cleaner {
+	display: block;
+	clear: both;
+}
+
+.floatLeft {
+	display: block;
+	float: left;
+	/*background-color: red;*/
+}
+
+.floatRight {
+	display: block;
+	float: right;
+	/*background-color: blue;*/
+}
+
+.floatNone {
+	display: block;
+	float: none;
+	clear: both;
+}
+
+.floatClear {
+	display: block;
+	clear: both;
+}
+
+.floatCenter {
+	display: block;
+	margin: 0 auto;
+	clear: both;
+}
+
+.acris-inline {
+	display: inline;
+}
+
+/********** Menu **********/
+
+.gwt-TabBar-outer {
+	/*background: rgb(240, 240, 240);*/
+	z-index: 1000;
+}
+
+.gwt-TabBar-holder {
+	overflow: visible !important;
+	width: 100%;
+	height: 100%;
+}
+
+.gwt-TabBar-container {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.gwt-TabBar-controls {
+	clear: both;
+	z-index: 10000;
+}
+
+.subTabBar0 .dragdrop-draggable {
+	display: table;
+}
+
+.gwt-TabBar-inner {
+}
+
+.gwt-TabBar-bottom {
+}
+
+.gwt-TabBar-bottom2 {
+}
+
+.gwt-TabBar-bottom3 {
+}
+
+.gwt-TabBar-Item-holder {
+	float: left;
+	position: relative;
+}
+
+.gwt-TabBar-Item {
+	background: transparent none;
+	overflow: hidden;
+	border: 0 none;
+	float: left;
+	margin: 0;
+}
+
+.subTabBar0 {
+	width: 100%;
+}
+
+.subTabBar1 {
+	left: 0;
+}
+
+.subTabBar2 {
+	left: 0;
+}
+
+.subTabBar3 {
+	left: 0;
+}
+
+.subTabBar4 {
+	left: 0;
+}
+
+.subTabBar5 {
+	left: 0;
+}
+
+.subTabBar0 .gwt-TabBarItemWrapper .gwt-TabBar-outer {
+	/*display: none;
+	position: absolute;*/
+}
+
+.subTabBar0 .gwt-TabBarItemWrapper:hover .subTabBar1 {
+	/*display: block;*/
+}
+
+.deck-panel-controls {
+	position: absolute;
+}
+
+.template-deck {
+	min-height: 400px;
+}
+
+.gwt-TabBar-control-button {
+	/*
+	position: absolute;
+	margin-top: 6px;
+	right: 7px;
+	width: 16px;
+	height: 16px;
+	*/
+}
+
+.gwt-TabBar-control-button-expanded {
+	/*background: url(../acris-images/main/menu-expand.png);*/
+}
+
+.gwt-TabBar-control-button-collapsed {
+	/*background: url(../acris-images/main/menu-collapse.png);*/
+}
+
+.textBlock, .headingBlock {
+    overflow: hidden;
+}
+
+.visibilityHidden {
+	visibility: hidden;
+}
+
+table.login-LoginPanel table {
+	width: 261px;
+}
+
+.acris-login-dialog .dialogMiddle {
+	width: 634px;
+	height: 280px;
+}
+
+/******* Form validation ********/
+.acris-form-error {
+	border: 1px solid red;
+}
+
+/* Fragments */
+
+.fragment-1-image {
+	float: left;
+	margin-right: 10px;
+}
+
+.fragment-1-text {
+	overflow: hidden;
+}
+
+.fragment-2-image {
+	float: right;
+	margin-left: 10px;
+}
+
+.fragment-2-text {
+	overflow: hidden;
+}
+
+.fragment-3-image {
+	margin: 10px auto 0;
+}
+
+.fragment-3-image .imageElement {
+	margin: 0 auto;
+	display: block;
+}
+
+.fragment-3-text {
+}
+
+.fragment-4-image {
+	margin: 0 auto 10px;
+}
+
+.fragment-4-image .imageElement {
+	margin: 0 auto;
+	display: block;
+}
+
+.fragment-4-text {
+}
+
+.fragment-5-image {
+	float: left;
+	margin-right: 10px;
+}
+
+.fragment-5-text1 {
+	overflow: hidden;
+}
+
+.fragment-5-text2 {
+}
+
+.fragment-6-image {
+	float: right;
+	margin-left: 10px;
+}
+
+.fragment-6-text1 {
+	overflow: hidden;
+}
+
+.fragment-6-text2 {
+}
+
+.fragment-7-block {
+}
+
+.fragment-8-image {
+	float: left;
+	margin-right: 10px;
+}
+
+.fragment-8-block {
+	overflow: hidden;
+}
+
+.fragment-9-image {
+	float: right;
+	margin-left: 10px;
+}
+
+.fragment-9-block {
+	overflow: hidden;
+}
+
+.fragment-X-block {
+}
+
+.fragment-X-image {
+	margin: 10px auto 0;
+}
+
+.fragment-X-image .imageElement {
+	margin: 0 auto;
+	display: block;
+}
+
+.fragment-XI-wrapper {
+	float: left;
+    width: 50%;
+}
+
+.fragment-XI-block {
+}
+
+.fragment-XI-image {
+	margin: 10px auto 0;
+}
+
+.fragment-XI-image .imageElement {
+	margin: 0 auto;
+	display: block;
+}
+
+.fragment-XII-image {
+	float: left;
+	margin-right: 10px;
+}
+
+.fragment-XII-block {
+	overflow: hidden;
+}
+
+.fragment-XII-text {
+}
+
+.fragment-XIII-image {
+	float: right;
+	margin-left: 10px;
+}
+
+.fragment-XIII-block {
+	overflow: hidden;
+}
+
+.fragment-XIII-text {
+}
+
+.fragment-XIV-block1 {
+	float: left;
+	width: 50%;
+}
+
+.fragment-XIV-block2 {
+	float: left;
+	width: 50%;
+}
+
+.tableBlock {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.synapso-flex-table-cell {
+ 	border: 1px solid #000000;
+}
+
+.imageGalleryContent .tn3e-text {
+	bottom: 105px;
+	display: none;
+}
+
+.imageGalleryContent .tn3e-text a {
+    color: black;
+    text-decoration: none;
+}
+
+.imageGalleryContent .tn3e-text a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/**** FORMS ******/
+.contact-form {
+	width: 350px;
+}
+
+.form-line {
+	padding-bottom: 10px;
+}
+
+.form-label {
+	width: 90px;
+	float: left;
+}
+
+.form-line textarea, .form-line input {
+	width: 250px;
+}
+
+.form-submit {
+	margin-left: 90px;
+}
+
+/* BEAN TABLE */
+.acris-bean-table .dataWrapper table {
+	background: white;
+}
