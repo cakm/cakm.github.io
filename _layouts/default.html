@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+        <link rel="stylesheet" href="{{site.baseurl}}/style.css" />
+        <meta name="description" content="{{site.description}}"/>
+        <meta name="author" content="{{site.author}}"/>
+        <link rel="author" href="humans.txt"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{site.baseurl}}/feed.xml" />
+
+        <link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/fontello.css">
+        <link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/animation.css">
+        <!--[if IE 7]><link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/fontello-ie7.css"><![endif]-->
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+            <a class="logo floatLeft" href="index.php">Milan Cák</a>
+            <div class="quote textBlock floatLeft">„Who wants to reach a distant target, has to take many small steps“</div>
+            <div class="logo_dream floatRight"></div>
+            <div class="language floatRight">
+                <div class="en textBlock floatLeft">EN</div>
+                <div class="separator floatLeft">|</div>    
+                <div class="sk textBlock floatLeft">SK</div>            
+            </div>
+        </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/">About me</a></li>
+                <li><a href="/skills">Skills</a></li>
+                <li><a href="/references">References</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/hobbies">Hobbies</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+        
+            {{ content }}
+        
+        </main><!-- /.container -->
+        <footer>
+            <div class="footer_line_top"></div>
+            <div class="footer_content">
+                <div class="social floatLeft">
+                    <div class="textBox floatClear">CONTACT ME:</div>
+                    <a class="facebook floatLeft" href="https://www.facebook.com/milan.cak.3">
+                        <img class="imageElement" src="images/footer_facebook.png"></img>
+                    </a>
+                    <a class="google floatLeft" href="https://plus.google.com/u/0/+MilanCák/about">
+                        <img class="imageElement" src="images/footer_google.png"></img>
+                    </a>
+                    <a class="twitter floatLeft" href="https://twitter.com/CakMilan">
+                        <img class="imageElement" src="images/footer_twitter.png"></img>
+                    </a>
+                </div>
+                <div class="copyright textBlock floatRight">MILAN CÁK © All rights reserved</div>
+            </div>
+            <div class="footer_line_bottom"></div>
+        </footer>
+    </body>
+</html>
