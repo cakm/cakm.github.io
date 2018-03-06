@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8"/>
         <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+        
+        <!-- Site Meta -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Language" content="sk">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="https://cakm.github.io/images/favicon.png">
+        <link rel="icon" type="image/x-icon" href="https://cakm.github.io/images/favicon.png">
+        <link rel="apple-touch-icon" href="https://cakm.github.io/images/favicon.png">
+        <link rel="apple-touch-icon-precomposed" href="https://cakm.github.io/images/favicon.png">
+        <link rel="icon" type="image/png" href="https://cakm.github.io/images/favicon.png">
+
         <link rel="stylesheet" href="{{site.baseurl}}/styles/style.css" />
         <link rel="stylesheet" href="{{site.baseurl}}/styles/common-styles.css" />
         <meta name="description" content="{{site.description}}"/>
@@ -10,13 +23,15 @@
     </head>
 
     <body>
-        <header>
-            <a class="logo floatLeft" href="">Milan Cák</a>
-            <div class="quote textBlock floatLeft">„Who wants to reach a distant target, has to take many small steps“</div>
-            <div class="logo_dream floatRight"></div>
+        <header class="site-content">
+            <div class="header-content">
+                <a class="logo floatLeft" href="">{{ site.author }}</a>
+                <div class="quote textBlock floatLeft">„Who wants to reach a distant target, has to take many small steps“</div>
+                <div class="logo_dream floatRight"></div>
+            </div>
         </header>
         <nav>
-            <div class="menu">
+            <div class="menu site-content">
                 <a class="first floatLeft" href="index">About me</a>
                 <a class="floatLeft" href="skills">Skills</a>
                 <a class="floatLeft" href="references">References</a>
@@ -25,14 +40,14 @@
                 <a class="floatLeft" href="contact">Contact</a>
             </div>
         </nav>
-        <main>
+        <main class="site-content">
         
             {{ content }}
         
         </main>
         <footer>
             <div class="footer_line_top"></div>
-            <div class="footer_content">
+            <div class="footer_content site-content">
                 <div class="social floatLeft">
                     <div class="textBox floatClear">CONTACT ME:</div>
                     <a class="facebook floatLeft" href="https://www.facebook.com/milan.cak.3">
@@ -45,7 +60,7 @@
                         <img class="imageElement" src="images/footer_twitter.png"></img>
                     </a>
                 </div>
-                <div class="copyright textBlock floatRight">MILAN CÁK © All rights reserved</div>
+                <div class="copyright textBlock floatRight">{{ site.author }} 2013 © All rights reserved</div>
             </div>
             <div class="footer_line_bottom"></div>
         </footer>

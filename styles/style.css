@@ -4,8 +4,9 @@
   color: #3b3b3b;
   font-family: Century Gothic; }
 
-header, .menu, .slider_content, .footer_content, .about, .skills, .references, .projects, .hobbies, .contact {
-  width: 960px;
+.site-content {
+  width: 90vw;
+  max-width: 960px;
   margin: 0 auto; }
 
 .section_head {
@@ -29,8 +30,9 @@ header, .menu, .slider_content, .footer_content, .about, .skills, .references, .
 
 /* ---------------Header--------------- */
 header {
-  height: 75px;
-  margin-top: 25px; }
+  height: 75px; }
+  header .header-content {
+    margin-top: 25px; }
   header .logo {
     margin-left: 20px;
     margin-bottom: 25px;
@@ -41,26 +43,44 @@ header {
     margin-left: 90px;
     margin-top: 10px;
     color: #9a9a9a; }
+    @media all and (max-width: 900px) {
+      header .quote {
+        display: none; } }
   header .logo_dream {
     width: 130px;
     height: 40px;
     margin-right: 30px;
     background: url("../images/logo.png") no-repeat;
     background-size: cover; }
+    @media all and (max-width: 1050px) {
+      header .logo_dream {
+        display: none; } }
 
 nav {
   height: 50px;
   background-color: #252525;
   border-radius: 5px; }
+  @media all and (max-width: 767px) {
+    nav {
+      display: none; } }
   nav a {
     padding: 15px 50px;
     color: white;
     border-left: 1px solid #3b3b3b;
     text-decoration: none; }
+    @media all and (max-width: 1050px) {
+      nav a {
+        padding: 15px 40px; } }
+    @media all and (max-width: 910px) {
+      nav a {
+        padding: 15px 30px; } }
     nav a.first {
       border: none !important; }
     nav a:hover {
       color: #f2385a; }
+
+main {
+  min-height: calc(100vh - 150px - 35px - 80px); }
 
 /* ---------------Footer--------------- */
 footer {
@@ -96,13 +116,21 @@ footer {
     padding-bottom: 30px;
     overflow: hidden; }
     .about .about_content .about_img {
-      margin: 20px 0px 0px 30px; }
+      width: calc(50% - 30px);
+      margin: 20px 0px 0px 30px;
+      float: left; }
       .about .about_content .about_img img {
         border-radius: 5px; }
+      @media all and (max-width: 767px) {
+        .about .about_content .about_img {
+          display: none; } }
     .about .about_content .about_text {
-      width: 575px;
-      margin-left: 100px;
-      margin-top: 20px; }
+      width: 50%;
+      margin-top: 20px;
+      float: left; }
+      @media all and (max-width: 767px) {
+        .about .about_content .about_text {
+          width: 100%; } }
       .about .about_content .about_text .textBlock {
         margin-top: 10px;
         font-size: 20px;
@@ -127,18 +155,26 @@ footer {
     overflow: hidden;
     padding-bottom: 50px; }
     .skills .skills_content .skills_left {
-      width: 450px;
-      margin-left: 30px; }
+      width: calc(50% - 15px);
+      float: left; }
+      @media all and (max-width: 767px) {
+        .skills .skills_content .skills_left {
+          width: 100%; } }
     .skills .skills_content .skills_right {
-      width: 450px;
-      margin-left: 30px; }
+      width: calc(50% - 15px);
+      margin-left: 30px;
+      float: left; }
+      @media all and (max-width: 767px) {
+        .skills .skills_content .skills_right {
+          width: 100%;
+          margin-left: 0; } }
     .skills .skills_content .skill {
       margin-top: 10px; }
       .skills .skills_content .skill .textBlock {
         margin-left: 10px;
         font-size: 16px; }
       .skills .skills_content .skill .progressbar {
-        width: 400px;
+        width: calc(100% - 2px);
         height: 30px;
         border: 1px solid #9a9a9a;
         border-radius: 5px;
@@ -147,13 +183,13 @@ footer {
           height: 30px;
           background-color: #10d4b6; }
         .skills .skills_content .skill .progressbar .pb1 {
-          width: 100px; }
+          width: 25%; }
         .skills .skills_content .skill .progressbar .pb2 {
-          width: 200px; }
+          width: 50%; }
         .skills .skills_content .skill .progressbar .pb3 {
-          width: 300px; }
+          width: 75%; }
         .skills .skills_content .skill .progressbar .pb4 {
-          width: 400px; }
+          width: 100%; }
 
 /* ---------------References------------- */
 .references {
@@ -163,11 +199,19 @@ footer {
     padding-bottom: 50px;
     overflow: hidden; }
     .references .references_content .references_left {
-      width: 450px;
-      margin-left: 30px; }
+      width: calc(50% - 15px);
+      float: left; }
+      @media all and (max-width: 767px) {
+        .references .references_content .references_left {
+          width: 100%; } }
     .references .references_content .references_right {
-      width: 450px;
-      margin-left: 30px; }
+      width: calc(50% - 15px);
+      margin-left: 30px;
+      float: left; }
+      @media all and (max-width: 767px) {
+        .references .references_content .references_right {
+          width: 100%;
+          margin-left: 0; } }
 
 /* ---------------Projects------------- */
 .projects {
@@ -178,31 +222,40 @@ footer {
     padding-bottom: 50px;
     overflow: hidden; }
     .projects .projects_content .projects_left {
-      width: 450px;
-      margin-left: 30px; }
+      width: calc(50% - 15px);
+      float: left; }
+      @media all and (max-width: 767px) {
+        .projects .projects_content .projects_left {
+          width: 100%; } }
     .projects .projects_content .projects_right {
-      width: 450px;
-      margin-left: 30px; }
+      width: calc(50% - 15px);
+      margin-left: 30px;
+      float: left; }
+      @media all and (max-width: 767px) {
+        .projects .projects_content .projects_right {
+          width: 100%;
+          margin-left: 0; } }
     .projects .projects_content a {
-      width: 400px;
+      width: 100%;
       height: 300px;
-      background-size: cover !important; }
+      background-size: cover !important;
+      background-position: center; }
     .projects .projects_content .projects_cloudfarms {
-      width: 860px;
-      margin-left: 50px;
+      width: 100%;
       margin-top: 30px; }
       .projects .projects_content .projects_cloudfarms .cloudfarms {
-        width: 860px;
-        height: 330px;
+        width: 100%;
+        height: 30vw;
+        max-height: 330px;
         margin-top: 20px;
-        background: url("../images/Cloudfarms.png") no-repeat; }
+        background: url("../images/Cloudfarms.jpg") no-repeat; }
     .projects .projects_content .projects_agmpartners {
-      width: 860px;
-      margin-left: 50px;
+      width: 100%;
       margin-top: 30px; }
       .projects .projects_content .projects_agmpartners .agmpartners {
-        width: 860px;
-        height: 538px;
+        width: 100%;
+        height: 50vw;
+        max-height: 538px;
         margin-top: 20px;
         background: url("../images/AGMpartners.jpg") no-repeat; }
     .projects .projects_content .seges {
@@ -218,19 +271,19 @@ footer {
     .projects .projects_content .mcena {
       background: url("../images/Mcena.jpg") no-repeat; }
     .projects .projects_content .game {
-      background: url("../images/game.png") no-repeat; }
+      background: url("../images/game.jpg") no-repeat; }
     .projects .projects_content .edu {
-      background: url("../images/edu.png") no-repeat; }
+      background: url("../images/edu.jpg") no-repeat; }
     .projects .projects_content .pozor_revizor {
       width: 200px;
       margin-left: 100px;
-      background: url("../images/PozorRevizor.png") no-repeat; }
+      background: url("../images/PozorRevizor.jpg") no-repeat; }
     .projects .projects_content .pozor_revizor_logo {
       width: 50px;
       height: 50px;
       margin-top: 10px;
       margin-right: 20px;
-      background: url("../images/PozorRevizorLogo.png") no-repeat; }
+      background: url("../images/PozorRevizorLogo.jpg") no-repeat; }
     .projects .projects_content .presentation {
       width: auto;
       height: auto;
@@ -263,13 +316,29 @@ footer {
     margin-top: 20px;
     padding-bottom: 50px;
     overflow: hidden; }
+    .hobbies .hobbies_content iframe {
+      width: 50%;
+      height: calc(45vw * 0.6); }
+      @media all and (max-width: 767px) {
+        .hobbies .hobbies_content iframe {
+          width: 100%;
+          height: calc(90vw * 0.6); } }
     .hobbies .hobbies_content .hobbies_text {
-      width: 450px;
+      width: calc(50% - 60px);
       margin-top: 20px; }
+      @media all and (max-width: 767px) {
+        .hobbies .hobbies_content .hobbies_text {
+          width: 100%; } }
       .hobbies .hobbies_content .hobbies_text.floatLeft {
         margin-right: 30px; }
+        @media all and (max-width: 767px) {
+          .hobbies .hobbies_content .hobbies_text.floatLeft {
+            margin-right: 0; } }
       .hobbies .hobbies_content .hobbies_text.floatRight {
         margin-left: 30px; }
+        @media all and (max-width: 767px) {
+          .hobbies .hobbies_content .hobbies_text.floatRight {
+            margin-left: 0; } }
       .hobbies .hobbies_content .hobbies_text .textBlock {
         margin-top: 10px; }
 
@@ -295,5 +364,12 @@ footer {
           margin-right: 20px; }
         .contact .contact_content .contact_right .contact_social .textBlock {
           margin-top: 2px; }
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center; }
+  .swiper-slide .slider-wrapper {
+    height: calc(90vw * 0.40625);
+    max-height: calc(960px * 0.40625); }
 
 /*# sourceMappingURL=style.css.map */

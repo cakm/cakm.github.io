@@ -2,6 +2,26 @@
 layout: default
 ---
 
+<link rel="stylesheet" href="styles/swiper.min.css">
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/swiper.min.js"></script>
+
+<section id="slider">
+    <div class="swiper-container swiper-main site-content">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('images/AboutSk.jpg')">
+                <div class="slider-wrapper" data-background=""></div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('images/References.jpg')">
+                <div class="slider-wrapper"></div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('images/Skills.jpg')">
+                <div class="slider-wrapper"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <div class="about">
     <h1 class="section_head headingBlock">About me</h1>
     <div class="about_content">
@@ -9,13 +29,23 @@ layout: default
             <img class="imageElement" src="images/AboutImage.png"></img>
         </div>
         <div class="about_text floatLeft">
-            <div class="textBlock floatClear">My name is Milan Cák.</div>
+            <div class="textBlock floatClear">My name is {{ site.author }}.</div>
             <div class="textBlock floatClear">I'm 20 years old.</div>
             <div class="textBlock floatClear">I study at the Slovak University of Technology in Bratislava, Faculty of Informatics and Information Technologies.</div>
             <div class="textBlock floatClear">I consider myself a person, who can be independent and I have no problems with solving tasks under stress. I'm creative and I love innovative solutions. I'm an adaptable, very sociable person and I like working in a team.</div>
             <div class="textBlock floatClear">In my free time, I focus on self-improvement in IT and management. I enjoy programming websites and applications. In addition, I edit images and music, I play various musical instruments, I do sports and I devote myself to a healthy lifestyle.</div><br>
-            <a href="Curriculum vitae - SK.pdf">Curriculum vitae - SK.pdf</a>
-            <a href="Curriculum vitae - EN.pdf">Curriculum vitae - EN.pdf</a>
+            <a href="files/Curriculum vitae - SK.pdf" target="_blank">Curriculum vitae - SK.pdf</a>
+            <a href="files/Curriculum vitae - EN.pdf" target="_blank">Curriculum vitae - EN.pdf</a>
         </div>
     </div>
 </div>
+
+<script>
+    // Slider
+	var mySwiper = new Swiper ('.swiper-container.swiper-main', {
+		loop: true,
+		autoplay: 3000,
+		speed: 1000,
+    	effect: 'fade',
+	});
+</script>

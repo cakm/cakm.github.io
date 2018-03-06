@@ -16,8 +16,9 @@ $darkgreen: #10d4b6;
 	font-family: Century Gothic;
 }
 
-header, .menu, .slider_content, .footer_content, .about, .skills, .references, .projects, .hobbies, .contact {
-	width: 960px;
+.site-content {
+	width: 90vw;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
@@ -46,7 +47,10 @@ header, .menu, .slider_content, .footer_content, .about, .skills, .references, .
 
 header {
 	height: 75px;
-	margin-top: 25px;
+	
+	.header-content {
+		margin-top: 25px;
+	}
 	
 	.logo {
 		margin-left: 20px;
@@ -60,6 +64,10 @@ header {
 		margin-left: 90px;
 		margin-top: 10px;
 		color: $grey;
+
+		@media all and (max-width: 900px) {
+			display: none;
+		}
 	}
 	
 	.logo_dream {
@@ -68,6 +76,10 @@ header {
 		margin-right: 30px;
 		background: url("../images/logo.png") no-repeat;
 		background-size: cover;
+		
+		@media all and (max-width: 1050px) {
+			display: none;
+		}
 	}
 }
 
@@ -75,13 +87,25 @@ nav {
 	height: 50px;
 	background-color: $black;
 	border-radius: 5px;
+
+	@media all and (max-width: 767px) {
+		display: none;
+	}
 	
 	a {
 		padding: 15px 50px;
 		color: white;
 		border-left: 1px solid $darkgrey;
 		text-decoration: none;
-		
+
+		@media all and (max-width: 1050px) {
+			padding: 15px 40px;
+		}
+
+		@media all and (max-width: 910px) {
+			padding: 15px 30px;
+		}
+
 		&.first {
 			border: none !important;
 		}
@@ -90,6 +114,10 @@ nav {
 			color: $red;
 		}
 	}
+}
+
+main {
+	min-height: calc(100vh - 150px - 35px - 80px);
 }
 
 /* ---------------Footer--------------- */
@@ -147,17 +175,27 @@ footer {
 		overflow: hidden;
 		
 		.about_img {
+			width: calc(50% - 30px);
 			margin: 20px 0px 0px 30px;
+			float: left;
 		
 			img {
 				border-radius: 5px;
 			}
+
+			@media all and (max-width: 767px) {
+				display: none;
+			}
 		}
 		
 		.about_text {
-			width: 575px;
-			margin-left: 100px;
+			width: 50%;
 			margin-top: 20px;
+			float: left;
+
+			@media all and (max-width: 767px) {
+				width: 100%;
+			}
 			
 			.textBlock {
 				margin-top: 10px;
@@ -194,13 +232,23 @@ footer {
 		padding-bottom: 50px;
 		
 		.skills_left {
-			width: 450px;
-			margin-left: 30px;			
+			width: calc(50% - 15px);
+			float: left;
+
+			@media all and (max-width: 767px) {
+				width: 100%;
+			}
 		}
 		
 		.skills_right {
-			width: 450px;
+			width: calc(50% - 15px);
 			margin-left: 30px;			
+			float: left;
+			
+			@media all and (max-width: 767px) {
+				width: 100%;
+				margin-left: 0;			
+			}
 		}
 		
 		.skill {
@@ -212,7 +260,7 @@ footer {
 			}
 			
 			.progressbar {
-				width: 400px;
+				width: calc(100% - 2px);
 				height: 30px;
 				border: 1px solid $grey;
 				border-radius: 5px;
@@ -224,19 +272,19 @@ footer {
 				}
 				
 				.pb1 {
-					width: 100px;
+					width: 25%;
 				}
 				
 				.pb2 {
-					width: 200px;
+					width: 50%;
 				}
 				
 				.pb3 {
-					width: 300px;
+					width: 75%;
 				}
 				
 				.pb4 {
-					width: 400px;
+					width: 100%;
 				}
 			}
 		}
@@ -254,13 +302,23 @@ footer {
 		overflow: hidden;
 		
 		.references_left {
-			width: 450px;
-			margin-left: 30px;
+			width: calc(50% - 15px);
+			float: left;
+			
+			@media all and (max-width: 767px) {
+				width: 100%;
+			}
 		}
 		
 		.references_right {
-			width: 450px;
+			width: calc(50% - 15px);
 			margin-left: 30px;
+			float: left;
+			
+			@media all and (max-width: 767px) {
+				width: 100%;
+				margin-left: 0;			
+			}
 		}
 	}
 }
@@ -277,44 +335,54 @@ footer {
 		overflow: hidden;
 		
 		.projects_left {
-			width: 450px;
-			margin-left: 30px;
+			width: calc(50% - 15px);
+			float: left;
+			
+			@media all and (max-width: 767px) {
+				width: 100%;
+			}
 		}
 		
 		.projects_right {
-			width: 450px;
+			width: calc(50% - 15px);
 			margin-left: 30px;
+			float: left;
 			
+			@media all and (max-width: 767px) {
+				width: 100%;
+				margin-left: 0;
+			}
 		}
 
 		a {
-			width: 400px;
+			width: 100%;
 			height: 300px;
 			background-size: cover !important;	
+			background-position: center;
 		}
 
 		.projects_cloudfarms {
-			width: 860px;
-			margin-left: 50px;
+			width: 100%;
 			margin-top: 30px;
 
 			.cloudfarms {
-				width: 860px;
-				height: 330px;
+				width: 100%;
+				height: 30vw;
+				max-height: 330px;
 				margin-top: 20px;
-				background: url("../images/Cloudfarms.png") no-repeat;
+				background: url("../images/Cloudfarms.jpg") no-repeat;
 			}
 		}
 
 
 		.projects_agmpartners {
-			width: 860px;
-			margin-left: 50px;
+			width: 100%;
 			margin-top: 30px;
 
 			.agmpartners {
-				width: 860px;
-				height: 538px;
+				width: 100%;
+				height: 50vw;
+				max-height: 538px;
 				margin-top: 20px;
 				background: url("../images/AGMpartners.jpg") no-repeat;
 			}
@@ -345,17 +413,17 @@ footer {
 		}
 
 		.game {
-			background: url("../images/game.png") no-repeat;
+			background: url("../images/game.jpg") no-repeat;
 		}
 		
 		.edu {
-			background: url("../images/edu.png") no-repeat;
+			background: url("../images/edu.jpg") no-repeat;
 		}
 
 		.pozor_revizor {
 			width: 200px;
 			margin-left: 100px;
-			background: url("../images/PozorRevizor.png") no-repeat;		
+			background: url("../images/PozorRevizor.jpg") no-repeat;		
 		}
 
 		.pozor_revizor_logo {
@@ -363,7 +431,7 @@ footer {
 			height: 50px;
 			margin-top: 10px;
 			margin-right: 20px;
-			background: url("../images/PozorRevizorLogo.png") no-repeat;		
+			background: url("../images/PozorRevizorLogo.jpg") no-repeat;		
 		}
 
 		.presentation {
@@ -417,16 +485,38 @@ footer {
 		padding-bottom: 50px;
 		overflow: hidden;
 
+		iframe {
+			width: 50%;
+			height: calc(45vw * 0.6);
+
+			@media all and (max-width: 767px) {
+				width: 100%;
+				height: calc(90vw * 0.6);
+			}
+		}
+
 		.hobbies_text {
-			width: 450px;
+			width: calc(50% - 60px);
 			margin-top: 20px;
+
+			@media all and (max-width: 767px) {
+				width: 100%;
+			}
 
 			&.floatLeft {
 				margin-right: 30px;
+
+				@media all and (max-width: 767px) {
+					margin-right: 0;
+				}
 			}
 
 			&.floatRight {
 				margin-left: 30px;
+
+				@media all and (max-width: 767px) {
+					margin-left: 0;
+				}
 			}
 
 			.textBlock {
@@ -472,5 +562,15 @@ footer {
 				}
 			}		
 		}	
+	}
+}
+
+.swiper-slide {
+	background-size: cover;
+	background-position: center;
+
+	.slider-wrapper {
+		height: calc(90vw * 0.40625);
+		max-height: calc(960px * 0.40625);
 	}
 }
