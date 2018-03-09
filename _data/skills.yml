@@ -1,0 +1,80 @@
+- title: Programming skills
+  skills:
+
+    - title: HTML
+      level: 3
+
+    - title: CSS
+      level: 3
+
+    - title: PHP
+      level: 3
+
+    - title: SQL
+      level: 3
+
+    - title: JavaScript
+      level: 2
+
+    - title: jQuery
+      level: 2
+
+    - title: AJAX
+      level: 1
+
+    - title: C
+      level: 2
+
+    - title: C++
+      level: 2
+
+    - title: C#
+      level: 2
+
+    - title: Visual Basic
+      level: 3
+
+    - title: Java
+      level: 1
+
+    - title: Python
+      level: 2
+
+    - title: Ruby
+      level: 2
+
+- title: Special skills
+  skills:
+
+    - title: Adobe Photoshop
+      level: 3
+
+    - title: Adobe Audition
+      level: 3
+
+    - title: MS Office
+      level: 3
+
+    - title: Windows
+      level: 3
+
+    - title: AutoCad
+      level: 2
+
+    - title: Multisim
+      level: 2
+
+    - title: Zoner Calisto
+      level: 2
+
+    - title: Linux/Unix
+      level: 2
+
+- title: Language skills
+  skills:
+
+    - title: English
+      level: 3
+
+    - title: German
+      level: 2

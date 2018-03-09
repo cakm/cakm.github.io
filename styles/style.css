@@ -154,22 +154,15 @@ footer {
   .skills .skills_content {
     overflow: hidden;
     padding-bottom: 50px; }
-    .skills .skills_content .skills_left {
-      width: calc(50% - 15px);
-      float: left; }
-      @media all and (max-width: 767px) {
-        .skills .skills_content .skills_left {
-          width: 100%; } }
-    .skills .skills_content .skills_right {
-      width: calc(50% - 15px);
-      margin-left: 30px;
-      float: left; }
-      @media all and (max-width: 767px) {
-        .skills .skills_content .skills_right {
-          width: 100%;
-          margin-left: 0; } }
     .skills .skills_content .skill {
-      margin-top: 10px; }
+      width: calc(50% - 15px);
+      float: left;
+      margin-top: 10px;
+      margin-right: 15px; }
+      @media all and (max-width: 767px) {
+        .skills .skills_content .skill {
+          width: 100%;
+          margin-right: 0; } }
       .skills .skills_content .skill .textBlock {
         margin-left: 10px;
         font-size: 16px; }
