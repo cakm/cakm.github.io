@@ -6,7 +6,7 @@ layout: wpub
 
 ## V práci sú použité nasledovné prvky:
 
-+ Členenie textu na capitoly, podkapitoly a podpodkapitoly
++ Členenie textu na kapitoly, podkapitoly a podpodkapitoly
 + Zoznamy - číselné, nečíselné, vnorené
 + Odkaz na externý web (v poznámke pod čiarou)
 + Poznámka pod čiarou
