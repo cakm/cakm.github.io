@@ -4,14 +4,12 @@ layout: wpub
 
 # Dokumentácia k 3. zadaniu
 
-
 ## Splnenie bodov zadania:
 * opis typu dokumentu - pomocou Relax NG - prezentacia.rng
 * vytvorenie ukážkovej XML prezentácie - prezentácia o exotických zvieratách - prezentacia.xml
 * základný návrh XSL transformácií - viď nižšie
 * vytvorenie XSLT pre konverziu prezentácie z XML -> XHTML+CSS - html.xsl
 * vytvorenie XSLT pre konverziu prezentácie XML -> PDF - pdf.xsl
-
 
 ## V práci sú použité nasledovné prvky:
 
@@ -44,7 +42,6 @@ layout: wpub
 * table-cell - bunka tabuľky
 * image - obrázok
     * možnosť nastaviť atribúty pre obrázok
-
 
 ## V prvkoch sú použité nasledovné atribúty:
 
