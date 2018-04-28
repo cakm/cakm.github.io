@@ -67,3 +67,5 @@ layout: wpub
     * width - šírka (povinný)
     * height - výška (povinný)
     * src - odkaz na obrázok (povinný)
+
+    

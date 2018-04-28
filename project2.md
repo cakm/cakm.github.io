@@ -22,3 +22,4 @@ layout: wpub
 * premenovanie role vedouci
 * vloženie loga FIIT STU na titulnú stranu
 * oprava označenia kapitol
+
